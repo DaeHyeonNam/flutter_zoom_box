@@ -58,7 +58,7 @@ class ZoomModel extends ChangeNotifier {
     }
 
     if (_scale < 1.0) {
-      _scale = 1.0; 
+      _scale = 1.0;
       _pos.x = 0;
       _pos.y = 0;
     } else if (_scale > 4.0) {

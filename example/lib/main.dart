@@ -11,26 +11,28 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
   Widget build(BuildContext context) {
+    double borderWidth = 4;
+    double radius = 20;
+
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
+          body: Center(
+            child: Container(
+              decoration: BoxDecoration(
+              borderRadius:
+                  BorderRadius.all(Radius.circular(radius + borderWidth)),
+              border: Border.all(width: borderWidth)),
+              child: ZoomBox(
+                borderRadius: BorderRadius.all(Radius.circular(radius)),
+                width: 250,
+                height: 250,
+                child: Image.network('https://picsum.photos/250?image=9'),
+              ),
+            ),
+          )
         ),
-        body: Center(
-          child: ZoomBox(
-            height: 300,
-            width: 300,
-            borderRadius: 100,
-            borderWidth: 5,
-            borderColor: Colors.blue,
-            backgroundColor: Colors.black,
-            child: FittedBox(child: Image.network('https://picsum.photos/250?image=9'), fit: BoxFit.fill,),
-          ),
-        )
-      ),
     );
   }
 }
