@@ -25,7 +25,11 @@ Scaffold(
 
 Additionally, if you want to add a border in ZoomBox like gif shown, refer to the codes below.
 ~~~
-Scaffold(
+
+double borderWidth = 4;
+double radius = 20;
+
+return Scaffold(
   body: Center(
     child: Container(
       decoration: BoxDecoration(
@@ -39,5 +43,5 @@ Scaffold(
       ),
     ),
   )
-)
+);
 ~~~
