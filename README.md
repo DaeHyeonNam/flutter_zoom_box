@@ -13,13 +13,13 @@ import 'package:flutter_zoom_box/zoom_box.dart';
 Use widget named 'ZoomBox' and give width, height and child which you want to wrap with as parameters. These three parameters are required ones.
 ~~~
 Scaffold(
-    body: Center(
-        child: ZoomBox(
-            width: 250,
-            height: 250,
-            child: Image.network('https://picsum.photos/250?image=9'),
-        ),
-    )
+  body: Center(
+    child: ZoomBox(
+    width: 250,
+    height: 250,
+    child: Image.network('https://picsum.photos/250?image=9'),
+    ),
+  )
 )
 ~~~
 
@@ -39,6 +39,11 @@ Scaffold(
       ),
     ),
   )
-);
+)
 ~~~
+There are other parameters for ZoomBox and the role of each parameter is same as that of container's parameters
 
+alignment
+padding
+constraints
+margin
