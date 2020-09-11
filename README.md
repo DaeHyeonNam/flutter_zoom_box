@@ -4,9 +4,9 @@ A widget that makes child widget zoomable. This widget can be applicable for not
 ![zoom_box_demo](./screenshot/zoom_box_demo.gif)
 
 ## How to use
-'''
+~~~
 import 'package:flutter_zoom_box/zoom_box.dart';
-'''
+~~~
 
 This project is a starting point for a Flutter
 [plug-in package](https://flutter.dev/developing-packages/),
