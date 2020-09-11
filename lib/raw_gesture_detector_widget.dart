@@ -6,7 +6,8 @@ import 'package:vector_math/vector_math_64.dart' show Vector3;
 
 class RemoveScrollGlow extends ScrollBehavior {
   @override
-  Widget buildViewportChrome(BuildContext context, Widget child, AxisDirection axisDirection) {
+  Widget buildViewportChrome(
+      BuildContext context, Widget child, AxisDirection axisDirection) {
     return child;
   }
 }
@@ -23,7 +24,10 @@ class RawGestureDetectorWidget extends StatelessWidget {
   final BoxConstraints constraints;
   final Color color;
 
-  RawGestureDetectorWidget({@required this.child, @required this.constraints, this.color}): assert(child != null), assert(constraints!= null);
+  RawGestureDetectorWidget(
+      {@required this.child, @required this.constraints, this.color})
+      : assert(child != null),
+        assert(constraints != null);
 
   @override
   Widget build(BuildContext context) {
@@ -82,10 +86,8 @@ class RawGestureDetectorWidget extends StatelessWidget {
         child: Transform(
           alignment: _alignment,
           transform: _transform,
-          child: ScrollConfiguration(
-            behavior: RemoveScrollGlow(),
-            child: child
-          ),
+          child:
+              ScrollConfiguration(behavior: RemoveScrollGlow(), child: child),
         ),
       ),
     );

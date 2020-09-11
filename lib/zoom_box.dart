@@ -17,30 +17,30 @@ class ZoomBox extends StatelessWidget {
   final Color borderColor;
 
   ZoomBox(
-      { Key key,
-        this.alignment,
-        this.padding,
-        this.backgroundColor,
-        this.borderColor = Colors.black,
-        this.borderWidth = 0,
-        this.borderRadius = 0,
-        this.width,
-        this.height,
-        this.constraints,
-        this.margin,
-        @required this.child})
+      {Key key,
+      this.alignment,
+      this.padding,
+      this.backgroundColor,
+      this.borderColor = Colors.black,
+      this.borderWidth = 0,
+      this.borderRadius = 0,
+      this.width,
+      this.height,
+      this.constraints,
+      this.margin,
+      @required this.child})
       : assert(child != null);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: this.width+this.borderWidth,
-      height: this.height+this.borderWidth,
+      width: this.width + this.borderWidth,
+      height: this.height + this.borderWidth,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(this.borderRadius + this.borderWidth)),
-        color: this.backgroundColor,
-        border: Border.all(color: this.borderColor, width: this.borderWidth)
-      ),
+          borderRadius: BorderRadius.all(
+              Radius.circular(this.borderRadius + this.borderWidth)),
+          color: this.backgroundColor,
+          border: Border.all(color: this.borderColor, width: this.borderWidth)),
       child: ClipRRect(
         borderRadius: BorderRadius.all(Radius.circular(this.borderRadius)),
         child: Container(
