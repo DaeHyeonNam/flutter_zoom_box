@@ -15,8 +15,8 @@ Use widget named 'ZoomBox' and give width, height and child which you want to wr
 Scaffold(
     body: Center(
         child: ZoomBox(
-            width: 300,
-            height: 300,
+            width: 250,
+            height: 250,
             child: Image.network('https://picsum.photos/250?image=9'),
         ),
     )
