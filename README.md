@@ -1,4 +1,5 @@
 # flutter_zoom_box
+![zoom_box_demo](./screenshot/zoom_box_demo.gif)
 
 A new Flutter plugin.
 
