@@ -1,7 +1,6 @@
 name: flutter_zoom_box
 description: A box that makes widgets inside zoomable.
 version: 0.1.0
-author: Daehyeon <ndh8392@gmail.com>
 homepage: https://daehyeonnam.github.io
 repository: https://github.com/DaeHyeonNam/flutter_zoom_box
 
@@ -13,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^4.3.1
+  vector_math: ^2.0.8
 
 dev_dependencies:
   flutter_test:
