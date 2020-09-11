@@ -2,7 +2,7 @@
 A widget that makes child widget zoomable. This widget can be applicable for not only images but also any other widgets.
 
 ![zoom_box_demo](./screenshot/zoom_box_demo.gif)
-![zoom_box2_demo](./screenshot/zoom_box_demo2.gif)
+![zoom_box2_demo](./screenshot/zoom_box2.gif)
 
 It works on Android and iOS.
 
