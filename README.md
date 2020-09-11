@@ -3,20 +3,42 @@ A widget that makes child widget zoomable. This widget can be applicable for not
 
 ![zoom_box_demo](./screenshot/zoom_box_demo.gif)
 
+It works on Android and iOS.
+
 ## How to use
 ~~~
 import 'package:flutter_zoom_box/zoom_box.dart';
 ~~~
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+Use widget named 'ZoomBox' and give width, height and child which you want to wrap with as parameters. These three parameters are required ones.
+~~~
+Scaffold(
+    body: Center(
+        child: ZoomBox(
+            width: 300,
+            height: 300,
+            child: Image.network('https://picsum.photos/250?image=9'),
+        ),
+    )
+)
+~~~
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Additionally, if you want to add a border in ZoomBox like gif shown, refer to the codes below.
+~~~
+Scaffold(
+  body: Center(
+    child: Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(radius + borderWidth)),
+        border: Border.all(width: borderWidth)),
+      child: ZoomBox(
+        borderRadius: BorderRadius.all(Radius.circular(radius)),
+        width: 250,
+        height: 250,
+        child: Image.network('https://picsum.photos/250?image=9'),
+      ),
+    ),
+  )
+);
+~~~
 
-The plugin project was generated without specifying the `--platforms` flag, no platforms are currently supported.
-To add platforms, run `flutter create -t plugin --platforms <platforms> .` under the same
-directory. You can also find a detailed instruction on how to add platforms in the `pubspec.yaml` at https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms.
