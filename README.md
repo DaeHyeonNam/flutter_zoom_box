@@ -1,7 +1,7 @@
 # flutter_zoom_box
-![zoom_box_demo](./screenshot/zoom_box_demo.gif)
+A widget that makes child widget zoomable. This widget can be applicable for not only images but also any other widgets.
 
-A new Flutter plugin.
+![zoom_box_demo](./screenshot/zoom_box_demo.gif)
 
 ## Getting Started
 
