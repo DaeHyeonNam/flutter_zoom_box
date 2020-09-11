@@ -41,12 +41,3 @@ Scaffold(
   )
 )
 ~~~
-There are other parameters for ZoomBox and the role of each parameter is same as that of container's parameters
-
-alignment
-
-padding
-
-constraints
-
-margin
