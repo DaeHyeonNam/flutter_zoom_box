@@ -1,5 +1,5 @@
 name: flutter_zoom_box
-description: A box that makes child widgets zoomable inside the box.
+description: A box that makes child widgets zoomable and draggable inside container like box.
 version: 0.1.2
 homepage: https://daehyeonnam.github.io
 repository: https://github.com/DaeHyeonNam/flutter_zoom_box
@@ -21,5 +21,8 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
-      some_platform:
-        pluginClass: somePluginClass
+      android:
+        package: com.virtually.flutter_zoom_box
+        pluginClass: FlutterZoomBox
+      ios:
+        pluginClass: FlutterZoomBox
